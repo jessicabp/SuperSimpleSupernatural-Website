@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--
+		Supersimplesupernatural.com
+		Individual Assignment
+
+		Super Simple Supernatural
+		Author:		Jessica Braddon-Parsons
+		Student ID:	13219524
+		Date:		September 2015
+
+		Filename:         subscribe.html
+		Supporting files: theme.css
+
+		-->
+
+		<title>Subscribe - Super Simple Supernatural</title>
+
+		<script src="modernizr-1.5.js"></script>
+
+		<meta charset="UTF-8" />
+		<meta name="description" content="SuperSimpleSupernatural subscription signup">
+		<meta name="keywords" content="Supernatural,SPN,Winchester,Dean,Sam">
+		<meta name="author" content="Jessica Braddon-Parsons">
+
+		<script src="modernizr-1.5.js"></script>
+
+		<link rel="shortcut icon" type="image/ico" href="icon.ico" />
+		<link href="theme.css" rel="stylesheet" type="text/css" />
+
+	</head>
+
+	<body>
+	<section class="everything">
+		<header>
+			<!-- logo & site title -->
+			<a href="home.html"><img class="headlogo" src="title.jpg" alt="super simple supernatural" /></a>
+
+
+			<!-- navigation menu -->
+			<nav id="horizontal">
+				<ul>
+					<li><a href="home.html" class="leftnav">Home</a></li>
+					<li><a href="seasons.html">Seasons</a></li>
+					<li><a href="characters.html">Characters</a></li>
+					<li><a href="castcrew.html">Cast &amp; Crew</a></li>
+					<li><a href="monsterglossary.html">Monster Glossary</a></li>
+					<li><a href="subscribe.html" class="rightnav" id="currentpage">Subscribe</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section class="pagetitle">
+			<h1>Subscribe</h1>
+		</section>
+		<section class="content form">
+			<p>Use this form to sign up to receive notifications when the website is updated.
+			<p>Required values are marked by an asterisk (*)</p>
+			<form id="signup" name="signup" action="confirm.html">
+				<fieldset id="info">
+					<legend>Contact Information</legend>
+						<label for="name">Name *</label>
+							<input name="name" id="name" placeholder="your name" required="required" /><br />
+						<label for="email">E-mail *</label>
+							<input name="email" id="email" placeholder="your email" type="email" required="required" />
+				</fieldset>
+				<fieldset id="updates">
+					<legend>Update Options</legend>
+						<label for="season">Which season are you currently watching? (So you don't receive spoilers!)</label>
+							<select name="season" id="season">
+								<option value="1" selected="selected">Season 1</option>
+								<option value="2">Season 2</option>
+								<option value="3">Season 3</option>
+								<option value="4">Season 4</option>
+								<option value="5">Season 5</option>
+								<option value="6">Season 6</option>
+								<option value="7">Season 7</option>
+								<option value="8">Season 8</option>
+								<option value="9">Season 9</option>
+								<option value="10">Season 10</option>
+								<option value="11">Season 11</option>
+							</select>
+						<label>Send notifications when there are updates on which characters?<br />(select all that apply)</label>
+							<label id="char1">
+								<input type="checkbox" name="dean" />
+								Dean Winchester
+							</label>
+							<label id="char2">
+								<input type="checkbox" name="sam" />
+								Sam Winchester
+							</label>
+							<label id="char3">
+								<input type="checkbox" name="castiel" />
+								Castiel
+							</label>
+							<label id="char4">
+								<input type="checkbox" name="crowley" />
+								Crowley
+							</label>
+							<label id="char5">
+								<input type="checkbox" name="john" />
+								John Winchester
+							</label>
+							<label id="char6">
+								<input type="checkbox" name="ruby" />
+								Ruby
+							</label>
+							<label id="char7">
+								<input type="checkbox" name="charlie" />
+								Charlie Bradbury
+							</label>
+							<label id="char8">
+								<input type="checkbox" name="bobby" />
+								Bobby Singer
+							</label>
+							<label id="char9">
+								<input type="checkbox" name="jody" />
+								Jody Mills
+							</label>
+						<label>Send notifications when there are changes to the cast &amp; crew page?</label>
+							<fieldset class="optionGroup">
+								<label for= "ccYes">Yes</label>
+									<input type="radio" name="castcrewupdates" id="ccYes" value="yes" />
+								<label for= "ccNo">No</label>
+									<input type="radio" name="castcrewupdates" id="ccNo" value="no" />
+							</fieldset>
+						<label>Send notifications when there are changes to the monster glossary?</label>
+							<fieldset class="optionGroup">
+								<label for= "mgYes">Yes</label>
+									<input type="radio" name="monsterglossaryupdates" id="mgYes" value="yes" />
+								<label for= "mgNo">No</label>
+									<input type="radio" name="monsterglossaryupdates" id="mgNo" value="no" />
+							</fieldset>
+					</fieldset>
+				<p>
+					<input type="submit" value="Submit" />
+				</p>
+			</form>
+		</section>
+		<footer>
+			<!-- logo and footer navigation -->
+			<a href="home.html"><img class="footlogo" src="logo.png" alt="logo" /></a>
+			<nav id="footnav">
+				<ul>
+					<li><a href="home.html">Home</a></li>
+					<li><a href="seasons.html">Seasons</a></li>
+					<li><a href="characters.html">Characters</a></li>
+					<li><a href="castcrew.html">Cast &amp; Crew</a></li>
+					<li><a href="monsterglossary.html">Monster Glossary</a></li>
+					<li><a href="subscribe.html">Subscribe</a></li>
+					<li><a href="copyright.html">Copyright Information</a></li>
+				</ul>
+			</nav>
+
+			<!-- short copyright info -->
+			<p class="footcopy">
+				&copy; 2015 - Jessica Braddon-Parsons<br />
+				Some content taken from <a href="http://www.supernaturalwiki.com/">SupernaturalWiki</a> and from
+				<a href="http://supernatural.wikia.com/">Supernatural Wikia</a>.
+		</footer>
+	</section>
+	</body>
+</html>

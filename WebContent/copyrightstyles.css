@@ -1,0 +1,44 @@
+/*
+   Supersimplesupernatural.com
+   CSS File for Home Page
+
+   Filename: homestyles.css
+
+   This file contains styles used in supersimplesupernatural.com/home.html
+
+*/
+
+
+section.content p {
+	color: black!important;
+}
+
+section.copyinfo p {
+	margin-top: 1%;
+}
+
+section.content h2 {
+	font-family: Georgia, serif;
+	text-align: center;
+}
+
+section.commons p, section.commons ul {
+	margin: 1% auto;
+}
+
+section.commons p.new {
+	text-indent: 0;
+	margin-top: 3%;
+}
+
+section.commons ul li {
+	margin-top: 1%;
+}
+
+section.copyimage table img {
+	width: 50px;
+}
+
+section.copycontent p, section.copyimage p {
+	text-align: center;
+}

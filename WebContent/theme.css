@@ -1,0 +1,360 @@
+/*
+   Supersimplesupernatural.com
+   CSS File for All Pages
+
+   Filename: theme.css
+
+   This file contains styles used in supersimplesupernatural.com
+
+*/
+
+
+/* fonts */
+@font-face {
+    font-family: 'SupernaturalKnight';
+    src: url('supernaturalknight.ttf');
+}
+
+@font-face {
+    font-family: 'Ghostwriter';
+    src: url('ghostwriter.ttf');
+}
+
+
+
+/* default & basic set up */
+header, body, nav, ul, li, img, p, div, article, object, section {
+	display: block;
+}
+
+body * {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	text-align: justify;
+	font-size: 0.98em;
+	line-height: 1.2em;
+	text-decoration: none;
+	color: black;
+}
+
+body a {
+	color: #690D0D;
+}
+
+body a:visited {
+	color: #474747;
+}
+
+
+
+/* body */
+body {
+	background: url("background.jpg") left top /*no-repeat*/;
+	background-size: 100% auto;
+	margin: 0;
+}
+
+section.everything {
+	margin: 0 auto;
+	width: 70%;
+	max-width: 1400px;
+	min-width: 600px;
+}
+
+
+
+/* header */
+header {
+	width: 100%;
+	margin: auto;
+	background-color: #FFFFFF;
+}
+
+header a img.headlogo {
+	width: 90%;
+	margin: auto;
+	padding: 10px 0;
+}
+
+header nav {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #E0E0E0;
+}
+
+header nav ul {
+	margin:0;
+	padding:0;
+	text-align:center;
+}
+
+header nav ul li {
+	display: inline;
+ 	padding: 1.1%;
+    font-size: 1.15em;
+}
+
+header nav ul li.leftnav {
+ 	padding-left: 0;
+}
+
+header nav ul li.rightnav {
+ 	padding-right: 0;
+}
+
+header nav ul li a {
+	display: inline-block;
+	font-family: ghostwriter, "Courier New", Courier, monospace;
+    color: black;
+}
+
+header nav ul li a:hover {
+	color: #690D0D;
+}
+
+header nav ul li a:visited {
+	color: black;
+}
+
+header nav ul li a#currentpage {
+	color: #474747;
+}
+
+
+
+/* footer */
+footer {
+	background-color: #E0E0E0;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+footer img.footlogo {
+	margin: auto;
+	width: 7%;
+	margin-bottom: 10px;
+}
+
+footer nav.footnav {
+    width: 100%;
+}
+
+footer nav ul {
+	margin:0;
+	padding:0;
+	text-align:center;
+}
+
+footer nav ul li {
+	display: inline;
+ 	padding: 1.1%;
+    font-size: 1.15em;
+}
+
+footer nav ul li a {
+	display: inline-block;
+	font-family: ghostwriter, "Courier New", Courier, monospace;
+    color: black;
+}
+
+footer nav ul li a:hover {
+	color: #690D0D;
+}
+
+footer p.footcopy {
+	text-align: center;
+	font-size: 0.7em;
+	padding-top: 5px;
+}
+
+
+
+/* page content */
+section.clearfix:after, div.spoilers:after { /*to make sure image is kept within coloured background section*/
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+section.pagetitle {
+	background-color: #ECECEC;
+	margin: 0;
+	padding: 2% 0;
+}
+
+section.pagetitle h1 {
+	font-family: SupernaturalKnight, Georgia, serif;
+	font-size: 2em;
+	text-align: center;
+	margin: 0;
+}
+
+section.content {
+	background-color: #F9F9F9;
+	padding: 10px 25px;
+}
+
+section.even {
+	background-color: #EFEFEF;
+}
+
+section.content a.intext img {
+	width: 20%;
+	display: inline-block;
+	float: left;
+	margin: 15px;
+	margin-left: 0;
+}
+
+section.content p, section.content cite a {
+	color: transparent;
+	margin: 0;
+}
+
+section.content h2 {
+	font-family: ghostwriter, "Courier New", Courier, monospace;
+	font-size: 1.5em;
+	margin: 10px;
+}
+
+section.content div.spoilers {
+	color: transparent;
+	position: relative;
+}
+
+div.hovertoview {
+	position: absolute;
+	top: 40%;
+	left: 0;
+	right: 0;
+}
+
+div.hovertoview p {
+	color: #4c4c4c;
+	text-align: center;
+	font-family: SupernaturalKnight, Georgia, serif;
+	font-size: 0.9em;
+}
+
+section.content cite {
+	margin-left: 20px;
+}
+
+section.content div.spoilers:hover p {
+	color: black;
+}
+
+section.content div.spoilers:hover cite a {
+	color: #690D0D;
+}
+
+div.spoilers:hover div.hovertoview p {
+	color: transparent;
+}
+
+section.content p + p {
+	text-indent: 2em;
+	margin: 0;
+	margin-top: 1%;
+}
+
+
+
+/* table */
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+table {
+	width: 90%;
+	margin: 20px auto;
+}
+
+table td, table th {
+	border-collapse: collapse;
+	display: table-cell;
+	text-align: center;
+	padding: 3%;
+	width: 30%;
+}
+
+table th {
+	background-color: #E0E0E0;
+}
+
+section.content table img {
+	margin: 0 auto;
+	width: 80px;
+}
+
+table.second {
+	margin-top: 40px;
+}
+
+
+
+/* Subscription Form & Confirmation */
+section.form p {
+	color: black;
+	margin-top: 10px;
+}
+
+section.form p + p {
+	text-indent: 0;
+	margin: 10px 0;
+}
+
+fieldset {
+	margin-bottom: 10px;
+}
+
+legend {
+	font-size: 1.1em;
+}
+
+label {
+	clear: left;
+	display: block;
+	float: left;
+	margin: 7px 4% 7px 5px;
+	width: 100%;
+}
+
+form p {
+	text-align: center;
+}
+
+input[type="submit"] {
+	display: inline;
+	float: none;
+	height: 40px;
+	width: 200px;
+	text-align: center;
+}
+
+fieldset.optionGroup input {
+	display: inline;
+	float: none;
+	margin: 0px 20px 0px 0px;
+	width: 20px;
+	vertical-align: baseline;
+}
+
+fieldset.optionGroup label {
+   display: inline;
+   float: none;
+   margin: 0px 3px 0px 0px;
+   width: 30px;
+}
+
+section.confirm h2 {
+	margin: 80px auto;
+	text-align: center;
+}
+
+
+
+

@@ -1,0 +1,96 @@
+/*
+   Supersimplesupernatural.com
+   CSS File for Home Page
+
+   Filename: homestyles.css
+
+   This file contains styles used in supersimplesupernatural.com/home.html
+
+*/
+
+
+/* home page video & blurb */
+section article.mainhome {
+	display: inline-block;
+	float: left;
+	padding-top: 10px;
+	background-color: #F1F1F1;
+}
+
+section figure.homevideo {
+	width: 300px;
+	font-size: 0.8em;
+	float: right;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	margin-top: 0;
+	padding: 10px;
+	background-color: #E0E0E0;
+}
+
+section figure.homevideo a {
+   color: #690D0D;
+}
+
+section article p.intro{
+	margin-top: 0px;
+	font-size: 1.1em;
+	font-weight: lighter;
+	padding-left: 10px;
+}
+
+section article p.intro::first-line {
+	font-weight: bold;
+	line-height: 1.8em;
+}
+
+section article p.overview{
+	font-size: 1em;
+	font-weight: lighter;
+	padding-left: 10px;
+}
+
+
+
+/* home page popular previews */
+section.previews {
+	background-color: #F9F9F9;
+	padding: 4% 2%;
+}
+
+section.first {
+	padding-bottom: 0;
+}
+
+section.second {
+	padding-top: 0;
+}
+
+section div.third {
+	display: inline-block;
+	width: 27.6%;
+	background-color: #E0E0E0;
+	margin: 4% 2.5% 0 2.5%;
+}
+
+section div a img.homepreview {
+	width: 100%;
+}
+
+section div.third:hover a img.homepreview {
+	opacity: 0.7;
+}
+
+section div a h2.homepreviewtitle {
+	font-family: ghostwriter, "Courier New", Courier, monospace;
+	font-size: 1.5em;
+	width: 100%;
+	text-align: center;
+	padding-top: 0.6em;
+	padding-bottom: 0.6em;
+	margin: 0px;
+}
+
+section div.third:hover a h2.homepreviewtitle {
+	color: #690D0D;
+}
